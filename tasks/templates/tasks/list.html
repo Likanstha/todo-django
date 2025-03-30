@@ -6,8 +6,9 @@
   <body>
     <h1>Task List</h1>
     <p>This is your task list page.</p>
-    <form>
-        {{form}}
+    <form method="POST" name="Create Task">
+        {%csrf_token%}
+        {{form.title}}
         <input type="submit" name="'Create Task"></input>
     </form>
     {% for task in tasks %}
