@@ -6,6 +6,10 @@
   <body>
     <h1>Task List</h1>
     <p>This is your task list page.</p>
+    <form>
+        {{form}}
+        <input type="submit" name="'Create Task"></input>
+    </form>
     {% for task in tasks %}
     <div>
       <p>{{task}}</p>
